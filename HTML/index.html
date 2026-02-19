@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!--<link href="./output.css" rel="stylesheet">-->
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <button id="toggle-mode">モード切替</button>
+
+    <h1 class="watashi">My Profile</h1>
+    <h2 class="learn">学習してきたプログラミング言語</h2>
+    <nav>
+      <ul class="nav-language">
+        <li><a href=#python>Python</a></li>
+        <li><a href=#java>Java</a></li>
+        <li><a href=#vba>VBA</a></li>
+        <li><a href=#C#>C#</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2 id="python">・Python</h2>
+      <p>人気なプログラミング言語<br>
+        DJango、Flaskといったwebアプリケーションの開発やscikit Leanといった機械学習やpandas、openpyxlなど<br>
+        データ整形やplotly、matplotlibなどグラフ化できるライブラリなど多彩
+      </p>
+    </section>
+    <section id="java">
+      <h2>・Java</h2>
+      <p>
+        「一度書けばどこでも動く」が特徴の堅牢な言語。<br>
+        Androidアプリ開発や、大規模な銀行システムなどでよく使われています。
+      </p>
+    </section>
+
+    <section id="vba">
+      <h2>・VBA</h2>
+      <p>
+        ExcelやAccessを自動操作するための強力なツール。<br>
+        事務作業の効率化といえばこれ。ボタン一つで数時間の仕事が終わります。
+      </p>
+    </section>
+
+    <section id="csharp">
+      <h2>・C#</h2>
+      <p>
+        Microsoftが開発した多機能な言語。<br>
+        ゲームエンジンのUnityで使われているので、ゲーム開発をしたいなら必須です！
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 My Profile</p>
+  </footer>
+  <script>
+    console.log("jsは読み込まれている");
+    const btn = document.getElementById("toggle-mode")
+    btn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+/* ダークモード時のスタイル */
+body.dark-mode {
+  background-color: #222; /* 背景を暗いグレーに */
+  color: #fff;            /* 文字を白に */
+}
+
+/* ついでに、ダークモードの時のセクション背景も調整 */
+body.dark-mode section {
+  background-color: #333;
+  color: #eee;
+}
+
+/* スムーズに切り替わるようにbodyにtransitionを足すと最高 */
+body {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.nav-language {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.watashi {
+  color: rgb(255, 0, 255);
+  text-decoration: underline;
+  font-size: 36px;
+  text-align:center;
+}
+.learn {
+  text-align: center;
+}
+#python, #vba {
+  color: lightblue
+}
+#java,#csharp {
+  color: lightgreen
+}
